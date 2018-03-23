@@ -5,41 +5,56 @@
     <title>Šachmatų lentelė</title>
     <meta charset="utf-8">
     <style>
-    table.Chessboard{
+    html{
+        background-color:grey;
+    }
+    table{
        width:640px;
        height:640px;
-       border-style:solid;
-       font-style:normal;
-       font-size:2vw;
-       align-self:center;
+       margin:auto;
+       background-color:whitesmoke;
+       font-family:serif;
+       font-weight: bold;
+       font-size: 0.875em;
+       text-align: center;
+    }
+    td.right{
+        text-align:center;
+        transform:rotate(270deg);
+    }
+    td.left{
+        text-align:center;
+        transform:rotate(90deg);
     }
     td.black{
-        width:40px;
-        height:40px;
-        background-color: black;
+        width:64px;
+        height:64px;
+        background-color:black;
     }
     td.white{
-        width:40px;
-        height:40px;
-        background-color:white;
+        width:64px;
+        height:64px;
+        background-color:brown;
     }
     </style>
 </head>
 <body>
     <table>
-        <th></th>
-        <th>a</th>
-        <th>b</th>
-        <th>c</th>
-        <th>d</th>
-        <th>e</th>
-        <th>f</th>
-        <th>g</th>
-        <th>h</th>
-        <th></th>
       <tbody>
-          <tr>
-              <td>1</td>
+        <tr>
+               <td></td>
+               <td>a</td>
+               <td>b</td>
+               <td>c</td>
+               <td>d</td>
+               <td>e</td>
+               <td>f</td>
+               <td>g</td>
+               <td>h</td>
+               <td></td>
+        </tr>
+        <tr>
+              <td class="right">1</td>
               <td class="white"></td>
               <td class="black"></td>
               <td class="white"></td>
@@ -48,10 +63,10 @@
               <td class="black"></td>
               <td class="white"></td>
               <td class="black"></td>
-              <td>1</td>
-          </tr>
-          <tr>
-              <td>2</td>
+              <td class="left">1</td>
+        </tr>
+        <tr>
+              <td class="right">2</td>
               <td class="black"></td>
               <td class="white"></td>
               <td class="black"></td>
@@ -60,10 +75,10 @@
               <td class="white"></td>
               <td class="black"></td>
               <td class="white"></td>
-              <td>2</td>
-          </tr>
-          <tr>
-              <td>3</td>
+              <td class="left">2</td>
+        </tr>
+        <tr>
+              <td class="right">3</td>
               <td class="white"></td>
               <td class="black"></td>
               <td class="white"></td>
@@ -72,10 +87,10 @@
               <td class="black"></td>
               <td class="white"></td>
               <td class="black"></td>
-              <td>3</td>
-          </tr>
-          <tr>
-              <td>4</td>
+              <td class="left">3</td>
+        </tr>
+        <tr>
+              <td class="right">4</td>
               <td class="black"></td>
               <td class="white"></td>
               <td class="black"></td>
@@ -84,10 +99,10 @@
               <td class="white"></td>
               <td class="black"></td>
               <td class="white"></td>
-              <td>4</td>
-          </tr>
-          <tr>
-              <td>5</td>
+              <td class="left">4</td>
+        </tr>
+        <tr>
+              <td class="right">5</td>
               <td class="white"></td>
               <td class="black"></td>
               <td class="white"></td>
@@ -96,10 +111,10 @@
               <td class="black"></td>
               <td class="white"></td>
               <td class="black"></td>
-              <td>5</td>
-          </tr>
-          <tr>
-              <td>6</td>
+              <td class="left">5</td>
+        </tr>
+        <tr>
+              <td class="right">6</td>
               <td class="black"></td>
               <td class="white"></td>
               <td class="black"></td>
@@ -108,10 +123,10 @@
               <td class="white"></td>
               <td class="black"></td>
               <td class="white"></td>
-              <td>6</td>
-          </tr>
-          <tr>
-              <td>7</td>
+              <td class="left">6</td>
+        </tr>
+        <tr>
+              <td class="right">7</td>
               <td class="white"></td>
               <td class="black"></td>
               <td class="white"></td>
@@ -120,10 +135,10 @@
               <td class="black"></td>
               <td class="white"></td>
               <td class="black"></td>
-              <td>7</td>
-          </tr>
-          <tr>
-              <td>8</td>
+              <td class="left">7</td>
+        </tr>
+        <tr>
+              <td class="right">8</td>
               <td class="black"></td>
               <td class="white"></td>
               <td class="black"></td>
@@ -132,8 +147,9 @@
               <td class="white"></td>
               <td class="black"></td>
               <td class="white"></td>
-              <td>8</td>
-          <tr>
+              <td class="left">8</td>
+        </tr>
+        <tr>
               <td></td>
               <td>a</td>
               <td>b</td>
@@ -144,8 +160,7 @@
               <td>g</td>
               <td>h</td>
               <td></td>
-          </tr>
-          </tr>
+        </tr>
       </tbody>
     </table>
 </body>
